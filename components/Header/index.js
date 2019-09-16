@@ -40,4 +40,5 @@ function Header() {
 };
 
 const headerContainer = document.querySelector('.header-container');
+headerContainer.classList.add('header');
 headerContainer.appendChild(Header());

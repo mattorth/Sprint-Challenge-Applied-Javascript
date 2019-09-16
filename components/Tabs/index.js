@@ -24,13 +24,13 @@ function TabCreator(topic) {
     tab.textContent = topic;
 
     // style
-    tab.classList.add('tabs');
+    tab.classList.add('tab', 'title');
 
     return tab;
 }
 
 const topics = document.querySelector('.topics');
-topics.classList.add('tabs', 'topics', 'tab', 'title');
+topics.classList.add('tabs', 'topics');
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then((results) => {

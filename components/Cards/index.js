@@ -71,10 +71,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         const technologyArray = Array.from(results.data.articles.technology);
         const articlesArray = bootstrapArray.concat(javascriptArray, jqueryArray, nodeArray, technologyArray);
         console.log(articlesArray);
-        // results.data.articles.map(articles => {
-        //     articlesArray.push(articles);
-        //     return articlesArray;
-        // })
+      
         return articlesArray;
     })
     
